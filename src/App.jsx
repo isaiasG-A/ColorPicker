@@ -1,6 +1,6 @@
 // Write your Color component here
-const Color = (props) => {
-  return <div className="red"></div>
+const Color = ({color}) => {
+  return <div className={color}></div>
 }
 
 const App = () => {
@@ -12,9 +12,9 @@ const App = () => {
       </div>
       <div id="colors-list">{
         <div id="colors-list">
-        <Color />
-        <Color />
-        <Color />
+        <Color color="black"/>
+        <Color color ="blue"/>
+        <Color color="red"/>
       </div>
       }</div>
     </div>
